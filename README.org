@@ -2,16 +2,12 @@
 #+AUTHOR: Ryan Jeffrey
 
 * A friendlier version of the greatest Emacs theme of all time.
-This is a fork of [[https://github.com/emacs-mirror/emacs/blob/master/etc/themes/manoj-dark-theme.el][/Manoj Dark/]], the greatest theme in all Emacs-dom.
-There are two flaws that this fork aims to address. 
+This is a fork of [[https://github.com/emacs-mirror/emacs/blob/master/etc/themes/manoj-dark-theme.el][Manoj Dark]], the greatest theme in all Emacs-dom.
 
-
-The first is that Manoj-dark resizes the font in function names. 
-This slows down Emacs on older computers as it stutters whenever a
-function name is added 
-
-The second problem with Manoj-dark is the mode-line. It's hideously ugly 
-and is probably the main reason people switch to other high-contrast fonts.
+This fork removed font boldness in some scenarios. This was done because
+there appears to be a bug in the font libraries that Emacs uses where bold
+is sometimes rendered too large. This slows down Emacs on older computers,
+and it looks ugly.
 
 * TODO
-Currently, the mode-line fix has not been implemented.
+I will eventually get around to fixing manoj-dark's modeline.
